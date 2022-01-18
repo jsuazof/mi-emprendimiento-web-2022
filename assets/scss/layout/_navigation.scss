@@ -1,0 +1,134 @@
+.nav {
+    width: 100vw;
+    height: 3.5rem;
+    background-color: $black;
+    display: flex;
+  
+    &__logo {
+      display: flex;
+      margin-left: 2rem;
+      margin-top: 0.5rem;
+    }
+    &__img {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+    .collapse {
+      position: absolute;
+      text-align: right;
+      right: 10%;
+      label {
+        display: block;
+        padding-top: 0.6em;
+        padding-bottom: 0.5em;
+        @include relative-converter(font-size, rem, $x-large, 16);
+      }
+    }
+  
+    #menu {
+      display: none;
+    }
+    input:checked ~ .nav__container {
+      max-height: 100%;
+    }
+    .nav__container {
+      max-height: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  
+    .nav__list {
+      list-style-type: none;
+    }
+  
+    .nav__item {
+      a {
+        display: inline-block;
+        padding: 0.5em;
+        font-family: $ubuntu;
+        @include relative-converter(font-size, rem, $small, 16);
+        font-weight: $f700;
+        font-size: $x-small;
+        text-decoration: none;
+        color: $white;
+        &:hover {
+          color: $tangerine;
+        }
+      }
+    }
+
+  
+  @media (min-width: 350px) {
+    .nav__item {
+      a {
+        text-align: right;
+      }
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .collapsible {
+      label {
+        display: none;
+      }
+    }
+    .nav__container {
+      min-height: 100%;
+      padding: 0.5em 3em;
+      overflow: visible;
+    }
+    .nav__list {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .nav__item {
+      a {
+        padding: 0.5em 1em;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .collapse {
+      label {
+        display: none;
+      }
+    }
+    .nav__container {
+      min-height: 100%;
+      padding: 0.5em 3em;
+      overflow: visible;
+    }
+    .nav__list {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .nav__item {
+      a {
+        padding: 0.5em 1em;
+      }
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .collapse {
+      label {
+        display: none;
+      }
+    }
+    .nav__container {
+      min-height: 100%;
+      padding: 0.5em 3em;
+      overflow: visible;
+    }
+    .nav__list {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .nav__item {
+      a {
+        padding: 0.5em 1em;
+      }
+    }
+  }

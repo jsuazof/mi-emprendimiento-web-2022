@@ -1,0 +1,26 @@
+.box {
+    border: solid;
+    padding: .5em .5em;
+  &__card {
+      border: solid;
+  }
+  &__img {
+      width: 35rem;
+      height: 13rem;
+      margin-top: 1rem;
+      margin-left: 2rem;
+  }
+  &__item {
+  }
+  &__subtitle {
+  }
+  &__text {
+  }
+  &__title {
+  }
+  &__ul {
+  }
+}
+
+.grid {
+}

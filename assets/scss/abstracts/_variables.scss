@@ -1,0 +1,37 @@
+//colors
+$white: #fff;
+$black: #000;
+$sable: #060606;
+$charcoal: #2e1503;
+$tangerine: #ffaf6d;
+$orange: #ffa500;
+
+//font family
+$poppins: 'Poppins', sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
+
+//font weights
+$f400: 400;
+$f700: 700;
+
+//font sizes
+$xxxxx-large: 50px;
+$xxxx-large: 45px;
+$xx-large: 35px;
+$x-large: 30px;
+$large: 20px;
+$medium: 16px;
+$small: 14px;
+$x-small:12px;
+
+//diagramación
+
+$viewportWidth:100%;
+
+// Breakpoints
+$breakpoints:(
+    'medium':(min-width: 768px),
+    'large' :(min-width: 992px),
+    'huge'  :(min-width: 1200px),
+);
+

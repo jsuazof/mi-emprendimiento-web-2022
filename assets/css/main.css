@@ -1,0 +1,281 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.contenedor {
+  width: 100%;
+}
+.contenedor__d-none-mobile {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.menu__logo {
+  font-size: resultrem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav {
+  width: 100vw;
+  height: 3.5rem;
+  background-color: #000;
+  display: flex;
+}
+.nav__logo {
+  display: flex;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+.nav__img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.collapse {
+  position: absolute;
+  text-align: right;
+  right: 10%;
+}
+.collapse label {
+  display: block;
+  padding-top: 0.6em;
+  padding-bottom: 0.5em;
+  font-size: resultrem;
+}
+
+#menu {
+  display: none;
+}
+
+input:checked ~ .nav__container {
+  max-height: 100%;
+}
+
+.nav__container {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav__list {
+  list-style-type: none;
+}
+
+.nav__item a {
+  display: inline-block;
+  padding: 0.5em;
+  font-family: "Ubuntu", sans-serif;
+  font-size: resultrem;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+}
+.nav__item a:hover {
+  color: #ffaf6d;
+}
+
+@media (min-width: 350px) {
+  .nav__item a {
+    text-align: right;
+  }
+}
+@media (min-width: 576px) {
+  .collapsible label {
+    display: none;
+  }
+
+  .nav__container {
+    min-height: 100%;
+    padding: 0.5em 3em;
+    overflow: visible;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav__item a {
+    padding: 0.5em 1em;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .collapse label {
+    display: none;
+  }
+
+  .nav__container {
+    min-height: 100%;
+    padding: 0.5em 3em;
+    overflow: visible;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav__item a {
+    padding: 0.5em 1em;
+  }
+}
+@media (min-width: 769px) {
+  .collapse label {
+    display: none;
+  }
+
+  .nav__container {
+    min-height: 100%;
+    padding: 0.5em 3em;
+    overflow: visible;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav__item a {
+    padding: 0.5em 1em;
+  }
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header__img {
+  width: 25rem;
+  height: 25rem;
+  background-image: url(../images/desarrolloweb2021t.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box {
+  border: solid;
+  padding: 0.5em 0.5em;
+}
+.box__card {
+  border: solid;
+}
+.box__img {
+  width: 35rem;
+  height: 13rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+@media (min-width: 768px) {
+  .contenedor__d-none-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    grid-template-columns: 5fr 2fr;
+  }
+}
+@media (min-width: 768px) {
+  .menu__group {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+}
+@media (min-width: 768px) {
+  .menu__logo {
+    padding-left: 0%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenido {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 4%;
+    margin-bottom: 5%;
+  }
+}
+@media (min-width: 768px) {
+  .contenido__contenedor-noticias {
+    grid-column: 1/span 1;
+  }
+}
+@media (min-width: 768px) {
+  .contenido__list-noticias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 0% 4%;
+    padding-left: 7%;
+  }
+}
+@media (min-width: 992px) {
+  .contenido__list-noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0% 4%;
+    padding-left: 7%;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+}
+
+.box {
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    justify-content: center;
+       
+    &__img{
+        width: 25rem;
+        height: 25rem;
+        
+        background-image: url(../images/desarrolloweb2021t.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+    }
+}

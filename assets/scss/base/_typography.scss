@@ -1,0 +1,11 @@
+//Tipografias navbar
+
+.menu{
+    &__logo{
+        @include relative-converter(font-size,rem ,$large, 16);
+        font-weight: $f700;
+        text-transform: uppercase;
+    }
+}
+
+
