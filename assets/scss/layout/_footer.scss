@@ -1,0 +1,60 @@
+.footer {
+  width: 100%;
+  height: 8rem;
+  background-color: $black;
+  color: $white;
+  font-family: $poppins;
+  font-size: $x-small;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  &__link {
+      text-decoration: none;
+      color: $white;
+      margin-left: 2em;
+      padding: 1em;
+      transition: all 300ms ease-in;
+      &:hover{
+          color: $orange;
+      }
+    }
+  &__nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__txt {
+      margin-left: 4em;
+  }
+  &__ul {
+    display: flex;
+    margin-bottom: 1em;
+  }
+  
+}
+.form {
+  &__btn {
+      margin-right: 5em;
+      background-color: $orange;
+      border: none;
+      font-weight: $x-small;
+      cursor: pointer;
+      &:hover {
+        color: $sable;
+        outline: 0;
+        background-color: $white; 
+      }
+    }
+  
+  &__input {
+    margin-left: 3em;
+
+    &:focus{
+        background-color: $orange;
+    }
+      
+  }
+}
