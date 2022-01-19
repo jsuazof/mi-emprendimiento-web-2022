@@ -22,68 +22,164 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Mi Emprendimiento Web 2022</title>
   </head>
-  <!--Inico Body-->
+  <!--Start Body-->
   <body>
-      <!--Inicio Nav-->
-      <nav class="nav row">
-        <div class="nav__logo">
-          <a
-            ><img class="nav__img" src="./assets/images/logo.svg" alt="logo"
-          /></a>
+    <!--Start Nav-->
+    <nav class="nav row">
+      <div class="nav__logo">
+        <a
+          ><img class="nav__img" src="./assets/images/logo.svg" alt="logo"
+        /></a>
+      </div>
+      <div class="collapse">
+        <input type="checkbox" id="menu" />
+        <label for="menu"><i class="fas fa-bars"></i></label>
+        <div class="nav__container">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">Acerca de</a></li>
+            <li class="nav__item"><a href="#">Cursos</a></li>
+            <li class="nav__item"><a href="#">Precios</a></li>
+          </ul>
         </div>
-        <div class="collapse">
-          <input type="checkbox" id="menu" />
-          <label for="menu"><i class="fas fa-bars"></i></label>
-          <div class="nav__container">
-            <ul class="nav__list">
-              <li class="nav__item"><a href="#">Acerca de</a></li>
-              <li class="nav__item"><a href="#">Cursos</a></li>
-              <li class="nav__item"><a href="#">Precios</a></li>
+      </div>
+    </nav>
+    <!--End Nav-->
+    <header class="header">
+      <div class="header__img"></div>
+    </header>
+    <!--End Header-->
+
+    <!--Start Main-->
+    <main class="grid">
+      <!--Start Box Section #1-->
+      <section class="box">
+        <!-- Start Card Section-->
+        <div class="box__card">
+          <img
+            src="./assets/images/html-y-cssb-.jpg"
+            class="box__img"
+            alt="html y css"
+          />
+          <div class="box__text">
+            <h1 class="box__title">HTML y CSS para principiantes.</h1>
+            <p class="box__subtitle">
+              HTML y CSS son dos herramientas importantes para dar inicio en el
+              mundo del desarrollo web. Por lo tanto en este curso aprenderás
+              todo sobre HTML y CSS, desde lo más básico hasta un nivel
+              intermedio, logrando desarrollar tu primera página web responsiva,
+              sin la necesidad de aplicar librerías externas para CSS.
+            </p>
+            <h5 class="box__instructor">Instructor: Manuel González</h5>
+            <ul class="box__ul">
+              <li class="box__item"><i class="far fa-thumbs-up"></i>1</li>
+              <li class="box__item"><i class="far fa-comments"></i>9</li>
+              <li class="box__item"><i class="far fa-eye"></i>9</li>
+              <li class="box__item"><i class="fas fa-share-alt"></i>0</li>
             </ul>
           </div>
         </div>
-      </nav>
-    <!--Fin Nav-->
-      <header class="header">
-      <div class="header__img"></div>
-    </header>
-    <!--Fin Header-->
+        <!--End Card Section-->
 
-    <!--Inicio Main-->
-    <main class="grid">
+        <!--Start Card Section #2-->
+        <div class="box__card">
+          <img src="./assets/images/sass.png" class="box__img--mod" alt="Sass" />
+          <div class="box__text">
+            <h2 class="box__title">Estilos con SASS</h2>
+            <p class="box__subtitle">
+              SASS es una herramienta importante hoy en día para todo
+              desarrollador web, ya que permite crear estilos mas ordenados,
+              eficientes y con menos líneas de código. po ello, en este curo
+              aprenderás todo lo necesario para crear hojas de estilos desde la
+              sintaxis de SCSS, implementando técnicas propias de SASS.
+            </p>
+            <h5 class="box__instructor">Instructor: Manuel González</h5>
+            <ul class="box__ul">
+              <li class="box__item"><i class="far fa-thumbs-up"></i>1</li>
+              <li class="box__item"><i class="far fa-comments"></i> 9</li>
+              <li class="box__item"><i class="far fa-eye"></i> 9</li>
+              <li class="box__item"><i class="fas fa-share-alt"></i> 0</li>
+            </ul>
+          </div>
+        </div>
+        <!--End Card Section #2-->
+      </section>
+      <!--End Box Section #1-->
+
+      <!--Start Box Section #2-->
       <section class="box">
-            <div class="box__card">
-              <img src="./assets/images/html-y-cssb-.jpg" class="box__img" alt="html y css">
-              <div class="box__text">
-                <h1 class="box__title">HTML y CSS para principiantes.</h1>
-                <p class="box__subtitle">HTML y CSS son dos herramientas importantes para dar inicio en el mundo del desarrollo web. Por lo tanto en este curso aprenderás todo sobre HTML y CSS, desde lo más básico hasta un nivel intermedio, logrando desarrollar tu primera página web responsiva, sin la necesidad de aplicar librerías externas para CSS.</p>
-                <h5>Instructor: Manuel González</h5>
-                  <ul class="box__ul">
-                    <li class="box__item"><i class="far fa-thumbs-up"></i>1</li>
-                    <li class="box__item"><i class="far fa-comments"></i>9</li>
-                    <li class="box__item"><i class="far fa-eye"></i>9</li>
-                    <li class="box__item"><i class="fas fa-share-alt"></i>0</li>
-                  </ul>
-              </div>
+        <!--Start Card Section #3-->
+        <div class="box__card2">
+          <div class="box__image">
+            <img
+            src="./assets/images/web-development.png"
+            class="box__img2"
+            alt="html y css"
+          />
           </div>
           
-              <div class="box__card">
-                <img src="./assets/images/sass.png" class="box__img" alt="Sass">
-                <div class="box__text">
-                  <h2 class="box__title">Estilos con SASS</h2>
-                  <p class="box__subtitle">SASS es una herramienta importante hoy en día para todo desarrollador web, ya que permite crear estilos mas ordenados, eficientes y con menos líneas de código. po ello, en este curo aprenderás todo lo necesario para crear hojas de estilos desde la sintaxis de SCSS, implementando técnicas propias de SASS.</p>
-                  <h5>Instructor: Manuel González</h5>
-                  <ul class="box__ul">
-                    <li class="box__item"><i class="far fa-thumbs-up"></i>1</li>
-                    <li class="box__item"><i class="far fa-comments"></i>9</li>
-                    <li class="box__item"><i class="far fa-eye"></i>9</li>
-                    <li class="box__item"><i class="fas fa-share-alt"></i>0</li>
-                  </ul>
-                </div>
-              </div>
+          <div class="box__text2">
+            <h3 class="box__title2">CURSOS 2022 LTDA</h3>
+            <ul class="box__ul2">
+              <li class="box__item2"><i class="fab fa-facebook-f"></i></li>
+              <li class="box__item2"><i class="fab fa-twitter"></i></li>
+              <li class="box__item2"><i class="fab fa-github"></i></li>
+            </ul>
+            <p class="box__subtitle2">
+              Cursos 2022 Ltda, es una empresa especialista en capacitaciones de
+              personal en Desarrollo Web. Partiendo de lo más básico de HTML y
+              CSS, hasta lo más complejo con SASS y JavaScript. Igualmente se
+              ofrecen cursos más especializados para el BackEnd, implementación
+              de frameworks para el frontEnd, entre otros..
+            </p>
+            <h4 class="box__title3">Más Cursos</h4>
+            <ul class="box__ul3">
+              <a class="box__courses" link rel="stylesheet" href="">
+                <li >Analítica Web (3)</li></a
+              >
+              <a class="box__courses" link rel="stylesheet" href="">
+                <li>Diseño Web (4)</li></a
+              >
+              <a  class="box__courses" link rel="stylesheet" href="">
+                <li>Desarrollo BackEnd (9)</li></a
+              >
+              <a  class="box__courses" link rel="stylesheet" href="">
+                <li>Seguridad Informática (14)</li></a
+              >
+              <a  class="box__courses" link rel="stylesheet" href="">
+                <li>Social Media (7)</li></a
+              >
+              <a class="box__courses" link rel="stylesheet" href="">
+                <li>SEO (8)</li></a
+              >
+              <a class="box__courses" link rel="stylesheet" href="">
+                <li>UI/UX (3)</li></a
+              >
+              <a class="box__courses" link rel="stylesheet" href="">
+                <li >JavaScript (5)</li></a
+              >
+              <a class="box__courses" link rel="stylesheet" href="">
+                <li>VueJS (1)</li></a
+              >
+            </ul>
+          </div>
+        </div>
+        <section class="animation"> 
+          <div class="animation__img">
+
+          </div>
+        </section>
         
+        <!--End Card Section #3-->
       </section>
-      <section class="box">sfafdsfdsfsf</section>
+      <!--End Box Section #2-->
     </main>
+    <!--End Main-->
+    <footer>
+      <div class="footer">
+        <p>© 2021| Todos los derechos reservados</p>
+      </div>
+      
+    </footer>
   </body>
+  <!--End Body-->
 </html>

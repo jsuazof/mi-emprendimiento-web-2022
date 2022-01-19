@@ -192,80 +192,128 @@ input:checked ~ .nav__container {
 .header {
   display: flex;
   justify-content: center;
+  height: 20rem;
 }
 .header__img {
-  width: 25rem;
-  height: 25rem;
+  width: 33rem;
+  height: 19rem;
+  background-size: cover;
   background-image: url(../images/desarrolloweb2021t.svg);
+  background-repeat: no-repeat;
+}
+
+.box {
+  border: solid gray 0.5px;
+  padding: 1em 0.5em;
+}
+.box__card {
+  border: solid gray 0.3px;
+}
+.box__img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+.box__img--mod {
+  width: 100%;
+  height: 13rem;
+  object-fit: cover;
+}
+.box__item {
+  display: inline-block;
+  padding: 0.2em;
+  font-size: 12px;
+}
+.box__item--space {
+  margin-right: 0.4em;
+}
+.box__instructor {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+.box__subtitle {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.4em;
+  color: gray;
+  font-size: 12px;
+}
+.box__text {
+  margin-left: 2em;
+}
+.box__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.animation {
+  display: flex;
+  justify-content: center;
+}
+.animation__img {
+  width: 10rem;
+  height: 10rem;
+  background-image: url(../images/web.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.box {
-  border: solid;
-  padding: 0.5em 0.5em;
+.box__courses {
+  text-decoration: none;
 }
-.box__card {
-  border: solid;
+.box__image {
+  display: flex;
+  justify-content: center;
 }
-.box__img {
-  width: 35rem;
-  height: 13rem;
-  margin-top: 1rem;
-  margin-left: 2rem;
+.box__img2 {
+  display: flex;
+  border: 1px solid #000;
+  width: 9rem;
+  border-radius: 20rem;
+  -webkit-border-radius: 20rem;
+  -moz-border-radius: 20rem;
+  -ms-border-radius: 20rem;
+  -o-border-radius: 20rem;
 }
-@media (min-width: 768px) {
-  .contenedor__d-none-mobile {
-    display: block;
-  }
+.box__item2 {
+  padding: 0.3rem;
 }
-
-@media (min-width: 768px) {
-  .menu {
-    grid-template-columns: 5fr 2fr;
-  }
+.box__subtitle2 {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.6em;
+  color: gray;
+  font-size: 12px;
+  margin-bottom: 0.4em;
 }
-@media (min-width: 768px) {
-  .menu__group {
-    grid-template-columns: 1fr 1fr 2fr;
-  }
+.box__title2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
 }
-@media (min-width: 768px) {
-  .menu__logo {
-    padding-left: 0%;
-  }
+.box__title3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  height: 2rem;
 }
-
-@media (min-width: 768px) {
-  .contenido {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 4%;
-    margin-bottom: 5%;
-  }
+.box__ul2 {
+  display: flex;
+  justify-content: center;
 }
-@media (min-width: 768px) {
-  .contenido__contenedor-noticias {
-    grid-column: 1/span 1;
-  }
-}
-@media (min-width: 768px) {
-  .contenido__list-noticias {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 0% 4%;
-    padding-left: 7%;
-  }
-}
-@media (min-width: 992px) {
-  .contenido__list-noticias {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 0% 4%;
-    padding-left: 7%;
-  }
+.box__ul3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  list-style: circle;
+  margin-top: 1em;
+  margin-left: 1rem;
+  line-height: 1.6em;
 }
 
 .grid {
@@ -274,8 +322,12 @@ input:checked ~ .nav__container {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
 }
 
-.box {
-  background-color: aqua;
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */

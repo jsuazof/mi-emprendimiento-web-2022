@@ -5,6 +5,7 @@ $sable: #060606;
 $charcoal: #2e1503;
 $tangerine: #ffaf6d;
 $orange: #ffa500;
+$gray: gray;
 
 //font family
 $poppins: 'Poppins', sans-serif;
@@ -30,6 +31,7 @@ $viewportWidth:100%;
 
 // Breakpoints
 $breakpoints:(
+    'small' :(min-width: 320px),
     'medium':(min-width: 768px),
     'large' :(min-width: 992px),
     'huge'  :(min-width: 1200px),

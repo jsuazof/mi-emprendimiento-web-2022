@@ -1,14 +1,16 @@
 .header{
     display: flex;
     justify-content: center;
+    height: 20rem;
+    
        
     &__img{
-        width: 25rem;
-        height: 25rem;
-        
+        width: 33rem;
+        height: 19rem;
+        background-size: cover;
         background-image: url(../images/desarrolloweb2021t.svg);
         background-repeat: no-repeat;
-        background-size: contain;
+        
         
     }
 }
