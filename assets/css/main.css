@@ -127,6 +127,9 @@ table {
     display: flex;
     opacity: 1;
   }
+  .nav__hamburger:hover {
+    color: #ffa500;
+  }
 
   .nav__menu {
     opacity: 0;
