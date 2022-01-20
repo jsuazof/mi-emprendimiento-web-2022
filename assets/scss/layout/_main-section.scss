@@ -45,16 +45,10 @@
 
 .animation {
   display: flex;
-  
+  flex-direction: column;
+  align-items: center;
   &__img {
     max-width: 70%;
-    
-  }
-  &__container{
-    justify-content: center;
-    
-    
-    
   }
 }
 .box {
