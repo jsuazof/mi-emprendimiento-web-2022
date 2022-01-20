@@ -218,11 +218,13 @@ table {
   align-items: center;
 }
 .footer__txt {
-  margin-left: 4em;
+  margin-left: 3em;
 }
 .footer__ul {
   display: flex;
-  margin-bottom: 1em;
+  align-items: center;
+  margin-left: -2rem;
+  padding: 1rem;
 }
 
 .form__btn {
@@ -290,10 +292,12 @@ table {
 
 .animation {
   display: flex;
-  justify-content: center;
 }
 .animation__img {
-  max-width: 78%;
+  max-width: 70%;
+}
+.animation__container {
+  justify-content: center;
 }
 
 .box__courses {

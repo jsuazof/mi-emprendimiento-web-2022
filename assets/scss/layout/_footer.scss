@@ -27,11 +27,13 @@
   }
   
   &__txt {
-      margin-left: 4em;
+      margin-left: 3em;
   }
   &__ul {
     display: flex;
-    margin-bottom: 1em;
+    align-items: center;
+    margin-left: -2rem;
+    padding: 1rem;
   }
   
 }
